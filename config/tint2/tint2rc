@@ -1,0 +1,250 @@
+#---------------------------------------------
+# TINT2 CONFIG FILE
+#---------------------------------------------
+
+#---------------------------------------------
+# BACKGROUND AND BORDER
+#---------------------------------------------
+rounded = 0
+# border superiror de la barra, aumenta tambien el tamano de los iconos.
+border_width = 1
+background_color = #2d2d2d 60
+border_color = #2d2d2d 18
+
+rounded = 0
+border_width = 0
+background_color = #ffffff 40
+border_color = #ffffff 50
+
+rounded = 0
+border_width = 0
+background_color = #ffffff 18
+border_color = #ffffff 70
+
+#---------------------------------------------
+# PANEL
+#---------------------------------------------
+# items dependiendo lo que queremos mostrar y en el orden
+panel_items = TE:E:E:E:E:E:E:SC
+panel_monitor = 1
+panel_position = top center horizontal
+panel_size = 100% 30
+panel_margin = 0 0
+panel_padding = 2 0
+font_shadow = 0
+panel_background_id = 1
+wm_menu = 1
+
+panel_dock = 0
+panel_layer = bottom
+strut_policy = follow_size
+
+#---------------------------------------------
+# TASKBAR
+#---------------------------------------------
+#taskbar_mode = multi_desktop
+taskbar_mode = single_desktop
+taskbar_padding = 2 3 2
+taskbar_background_id = 0
+#taskbar_active_background_id = 0
+
+#---------------------------------------------
+# TASKS
+#---------------------------------------------
+task_icon = 1
+task_text = 1
+task_maximum_size = 140 35
+task_centered = 1
+task_padding = 6 3
+task_font = sans 12
+task_font_color = #ffffff 70
+task_background_id = 3
+task_icon_asb = 100 0 0
+task_active_background_id = 2
+task_active_font_color = #ffffff 85
+task_active_icon_asb = 100 0 0
+urgent_nb_of_blink = 8
+
+#---------------------------------------------
+# SYSTRAYBAR
+#---------------------------------------------
+systray = 1
+systray_padding = 0 4 5
+systray_background_id = 0
+systray_sort = left2right
+systray_icon_size = 0
+systray_icon_asb = 100 0 0
+
+#---------------------------------------------
+# CLOCK
+#---------------------------------------------
+time1_format = %H:%M
+time1_font = sans 12
+clock_font_color = #ffffff 76
+clock_padding = 1 0
+clock_background_id = 0
+clock_lclick_command = gsimplecal
+
+#---------------------------------------------
+# BATTERY
+#---------------------------------------------
+battery = 0
+battery_hide = 98
+battery_low_status = 5
+battery_low_cmd = notify-send "battery low"
+bat1_font = sans 10
+bat2_font = sans 10
+battery_font_color = #ffffff 76
+battery_padding = 1 0
+battery_background_id = 0
+
+#---------------------------------------------
+# TOOLTIP
+#---------------------------------------------
+tooltip = 0
+tooltip_padding = 2 2
+tooltip_show_timeout = 0.7
+tooltip_hide_timeout = 0.3
+tooltip_background_id = 1
+tooltip_font_color = #ffffff 80
+tooltip_font = sans 12
+
+#---------------------------------------------
+# MOUSE ACTION ON TASK
+#---------------------------------------------
+mouse_middle = none
+mouse_right = none
+mouse_scroll_up = toggle
+mouse_scroll_down = iconify
+
+#---------------------------------------------
+# AUTOHIDE OPTIONS
+#---------------------------------------------
+autohide = 0
+autohide_show_timeout = 0.0
+autohide_hide_timeout = 0.0
+autohide_height = 0
+
+#-------------------------------------
+# Executor
+#-------------------------------------
+
+#-------------------------------------
+# Load
+execp = new
+execp_command = psuinfo -Cg
+execp_interval = 2
+execp_has_icon = 0
+execp_cache_icon = 1
+execp_continuous = 1
+execp_markup = 1
+execp_font = Monospace 10
+execp_font_color = #ffffff 100
+execp_padding = 5 5
+execp_background_id = 0
+execp_centered = 0
+execp_icon_w = 0
+execp_icon_h = 0
+
+#-------------------------------------
+# CPU
+execp = new
+execp_command = psuinfo -Ia
+execp_interval = 2
+execp_has_icon = 1
+execp_cache_icon = 1
+execp_continuous = 0
+execp_markup = 1
+execp_font = Monospace 10
+execp_font_color = #ffffff 100
+execp_padding = 5 5
+execp_background_id = 0
+execp_centered = 0
+execp_icon_w = 15
+execp_icon_h = 15
+
+#-------------------------------------
+# CPU Temp
+execp = new
+execp_command = psuinfo -It 2> /dev/null
+execp_interval = 2
+execp_has_icon = 1
+execp_cache_icon = 1
+execp_continuous = 0
+execp_markup = 1
+execp_font = Monospace 10
+execp_font_color = #ffffff 100
+execp_padding = 5 5
+execp_background_id = 0
+execp_centered = 0
+execp_icon_w = 15
+execp_icon_h = 15
+execp_tooltip = 50°C - 62°C Average temp, 100°C Max
+
+#-------------------------------------
+# Uptime
+execp = new
+execp_command = psuinfo -Iu
+execp_interval = 2
+execp_has_icon = 1
+execp_cache_icon = 1
+execp_continuous = 0
+execp_markup = 1
+execp_font = Monospace 10
+execp_font_color = #ffffff 100
+execp_padding = 5 5
+execp_background_id = 0
+execp_centered = 0
+execp_icon_w = 15
+execp_icon_h = 15
+
+#-------------------------------------
+# Network
+execp = new
+execp_command = bwm-ng -o csv -c 1 | awk -F ';' '/total/ { if ($5 == 0) { printf("/usr/share/psuinfo/xfer.svg\n%4d Kb/s\n", 0) } else if ($5*8/1.0e3 < 1000) { printf "%s\n%4d Kb/s\n", "/usr/share/psuinfo/xfer-b.svg", ($5*8/1.0e3) } else { printf "%s\n%4d Mb/s\n", "/usr/share/psuinfo/xfer-b.svg", ($5*8/1.0e6)}}'
+execp_interval = 2
+execp_font = Liberation Mono 10
+execp_font_color = #ffffff 76
+execp_lclick_command = notify-send "$(printf "Local ip: %s\n\nPublic ip: %s" $(hostname -i | cut -d ' ' -f 1) $(curl --connect-timeout 10 -s ifconfig.co))"
+execp_has_icon = 1
+execp_cache_icon = 1
+execp_continuous = 0
+execp_icon_w = 15
+execp_icon_h = 15
+execp_padding = 5 5
+
+#-------------------------------------
+# Wifi
+execp = new
+execp_command = ~/.tint2-executors/wifi-name.sh
+execp_interval = 2
+execp_has_icon = 1
+execp_cache_icon = 0
+execp_continuous = 0
+execp_markup = 0
+execp_tooltip = 
+execp_font_color = #f8e6e6 100
+execp_padding = 5 5
+execp_background_id = 0
+execp_centered = 0
+execp_icon_w = 15
+execp_icon_h = 15
+
+#-------------------------------------
+#-------------------------------------
+# Update
+execp = new
+execp_command = ~/.tint2-executors/arch-update.sh
+execp_interval = 86400
+execp_has_icon = 1
+execp_cache_icon = 0
+execp_continuous = 0
+execp_markup = 0
+execp_tooltip = 
+execp_lclick_command = termite -e 'sh -c "sudo pacman -Syu ; echo Finished, press enter to close; read; killall -SIGUSR1 tint2"'
+execp_font_color = #f8e6e6 100
+execp_padding = 5 5
+execp_background_id = 0
+execp_centered = 0
+execp_icon_w = 15
+execp_icon_h = 15
