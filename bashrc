@@ -3,16 +3,12 @@
 # Config Bash It
 export BASH_IT="${HOME}/.bash_it"
 export BASH_IT_THEME='powerline-plain'
-
-export GIT_HOSTING='git@git.domain.com'
-export SCM_GIT_SHOW_MINIMAL_INFO=true
-
-unset MAILCHECK
-
-export SCM_CHECK=true
+#export SCM_CHECK=true
 
 # Load Bash It
-source ${BASH_IT}/bash_it.sh
+if [ -f ${BASH_IT}/bash_it.sh ]; then
+   source ${BASH_IT}/bash_it.sh
+fi
 
 export BROWSER=/usr/bin/chromium
 export EDITOR=vim
@@ -32,7 +28,9 @@ alias battery="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
 alias chivo='cht.sh'
 alias cat='ccat -G String="_fuchsia_" -G Plaintext="green"'
 
-source ${HOME}/.ssh_aliases
+if [ -f ${HOME}/.ssh_aliases ]; then
+    source ${HOME}/.ssh_aliases
+fi
 
 # dircolors -p > ~/.dir_colors
 eval `dircolors -b ${HOME}/.dir_colors`
