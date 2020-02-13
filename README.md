@@ -12,3 +12,7 @@ My dotfiles :-)
 - [tint2-executors](https://github.com/nwg-piotr/tint2-executors)
 - [cheat.sh](https://github.com/chubin/cheat.sh)
 - [wttr.in](https://github.com/chubin/wttr.in)
+
+## Fonts
+
+- [noto-emoji](https://github.com/googlefonts/noto-emoji/tree/master/fonts)
