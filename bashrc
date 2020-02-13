@@ -35,6 +35,9 @@ fi
 # dircolors -p > ~/.dir_colors
 eval `dircolors -b ${HOME}/.dir_colors`
 
+# 777 directories
+LS_COLORS="$LS_COLORS:ow=103;30;01"
+
 if [ -f ${HOME}/.bash-insulter/src/bash.command-not-found ]; then
     source ${HOME}/.bash-insulter/src/bash.command-not-found
 fi
