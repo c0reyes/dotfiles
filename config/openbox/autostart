@@ -2,7 +2,8 @@ tint2 &
 volumeicon &
 cbatticon &
 compton --config ~/.config/compton.conf -b &
-nitrogen --restore &
+#nitrogen --restore &
+bwall > /dev/null &
 setxkbmap -option compose:ralt &
 lxpolkit &
 killall -9 light-locker

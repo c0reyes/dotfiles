@@ -12,6 +12,7 @@ My dotfiles :-)
 - [tint2-executors](https://github.com/nwg-piotr/tint2-executors)
 - [cheat.sh](https://github.com/chubin/cheat.sh)
 - [wttr.in](https://github.com/chubin/wttr.in)
+- [battery-wallpaper](https://github.com/adi1090x/battery-wallpaper/)
 
 ## Fonts
 
