@@ -17,3 +17,7 @@ My dotfiles :-)
 ## Fonts
 
 - [noto-emoji](https://github.com/googlefonts/noto-emoji/tree/master/fonts)
+
+## Screen
+
+![alt text](screen/screenshot.png?raw=true "Screenshot")
