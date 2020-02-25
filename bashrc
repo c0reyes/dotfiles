@@ -3,7 +3,7 @@
 # Config Bash It
 export BASH_IT="${HOME}/.bash_it"
 
-if [ -z ${TERM_PROGRAM} ]; then
+if [ -z ${TERM_PROGRAM} ] && [ -z ${RSTUDIO} ]; then
     export BASH_IT_THEME='powerline-plain'
 else
     export BASH_IT_THEME='minimal'
