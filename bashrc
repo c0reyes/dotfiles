@@ -2,8 +2,12 @@
 
 # Config Bash It
 export BASH_IT="${HOME}/.bash_it"
-export BASH_IT_THEME='powerline-plain'
-#export SCM_CHECK=true
+
+if [ -z ${TERM_PROGRAM} ]; then
+    export BASH_IT_THEME='powerline-plain'
+else
+    export BASH_IT_THEME='minimal'
+fi
 
 # Load Bash It
 if [ -f ${BASH_IT}/bash_it.sh ]; then
