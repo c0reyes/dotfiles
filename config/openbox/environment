@@ -1,3 +1,5 @@
 export PATH=$PATH:/opt/Apps/java/bin:/opt/Apps/sdk/platform-tools
 export JAVA_HOME=/opt/Apps/java
 export RSTUDIO_PANDOC=/opt/Apps/pandoc-2.9.1.1/bin/
+# https://askubuntu.com/questions/723683/mouse-cursor-leaving-trails-artifacts
+export CLUTTER_PAINT=disable-clipped-redraws:disable-culling

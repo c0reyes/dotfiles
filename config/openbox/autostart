@@ -1,10 +1,11 @@
 tint2 &
 volumeicon &
 cbatticon &
-compton --config ~/.config/compton.conf -b &
 nitrogen --restore &
-#bwall > /dev/null &
+# bwall > /dev/null &
 setxkbmap -option compose:ralt &
 lxpolkit &
 killall -9 light-locker
 ${HOME}/bin/http_test &
+xrandr --setprovideroutputsource 1 0
+compton --config ~/.config/compton.conf -b &

@@ -25,7 +25,7 @@ border_color = #ffffff 70
 # PANEL
 #---------------------------------------------
 # items dependiendo lo que queremos mostrar y en el orden
-panel_items = TE:E:E:E:E:E:E:SC
+panel_items = TE:E:E:E:E:SC
 panel_monitor = 1
 panel_position = top center horizontal
 panel_size = 100% 30
@@ -130,9 +130,10 @@ autohide_height = 0
 #-------------------------------------
 
 #-------------------------------------
-# Load
+# Load and Others
 execp = new
-execp_command = psuinfo -Cg
+execp_command = psuinfo -GS
+#execp_command = psuinfo -Cg
 execp_interval = 2
 execp_has_icon = 0
 execp_cache_icon = 1
@@ -148,38 +149,38 @@ execp_icon_h = 0
 
 #-------------------------------------
 # CPU
-execp = new
-execp_command = psuinfo -Ia
-execp_interval = 2
-execp_has_icon = 1
-execp_cache_icon = 1
-execp_continuous = 0
-execp_markup = 1
-execp_font = Monospace 10
-execp_font_color = #ffffff 100
-execp_padding = 5 5
-execp_background_id = 0
-execp_centered = 0
-execp_icon_w = 15
-execp_icon_h = 15
+#execp = new
+#execp_command = psuinfo -Ia
+#execp_interval = 2
+#execp_has_icon = 1
+#execp_cache_icon = 1
+#execp_continuous = 0
+#execp_markup = 1
+#execp_font = Monospace 10
+#execp_font_color = #ffffff 100
+#execp_padding = 5 5
+#execp_background_id = 0
+#execp_centered = 0
+#execp_icon_w = 15
+#execp_icon_h = 15
 
 #-------------------------------------
 # CPU Temp
-execp = new
-execp_command = psuinfo -It 2> /dev/null
-execp_interval = 2
-execp_has_icon = 1
-execp_cache_icon = 1
-execp_continuous = 0
-execp_markup = 1
-execp_font = Monospace 10
-execp_font_color = #ffffff 100
-execp_padding = 5 5
-execp_background_id = 0
-execp_centered = 0
-execp_icon_w = 15
-execp_icon_h = 15
-execp_tooltip = 50°C - 62°C Average temp, 100°C Max
+#execp = new
+#execp_command = psuinfo -It 2> /dev/null
+#execp_interval = 2
+#execp_has_icon = 1
+#execp_cache_icon = 1
+#execp_continuous = 0
+#execp_markup = 1
+#execp_font = Monospace 10
+#execp_font_color = #ffffff 100
+#execp_padding = 5 5
+#execp_background_id = 0
+#execp_centered = 0
+#execp_icon_w = 15
+#execp_icon_h = 15
+#execp_tooltip = 50°C - 62°C Average temp, 100°C Max
 
 #-------------------------------------
 # Uptime
