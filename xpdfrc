@@ -1,1 +1,16 @@
 initialZoom 175
+
+fontFile Times-Roman           /usr/share/fonts/gsfonts/NimbusRoman-Regular.otf
+fontFile Times-Italic          /usr/share/fonts/gsfonts/NimbusRoman-Italic.otf
+fontFile Times-Bold            /usr/share/fonts/gsfonts/NimbusRoman-Bold.otf
+fontFile Times-BoldItalic      /usr/share/fonts/gsfonts/NimbusRoman-BoldItalic.otf
+fontFile Helvetica             /usr/share/fonts/gsfonts/NimbusSans-Regular.otf
+fontFile Helvetica-Oblique     /usr/share/fonts/gsfonts/NimbusSans-Oblique.otf
+fontFile Helvetica-Bold        /usr/share/fonts/gsfonts/NimbusSans-Bold.otf
+fontFile Helvetica-BoldOblique /usr/share/fonts/gsfonts/NimbusSans-BoldOblique.otf
+fontFile Courier               /usr/share/fonts/gsfonts/NimbusMonoPS-Regular.otf
+fontFile Courier-Oblique       /usr/share/fonts/gsfonts/NimbusMonoPS-Italic.otf
+fontFile Courier-Bold          /usr/share/fonts/gsfonts/NimbusMonoPS-Bold.otf
+fontFile Courier-BoldOblique   /usr/share/fonts/gsfonts/NimbusMonoPS-BoldItalic.otf
+fontFile Symbol                /usr/share/fonts/gsfonts/StandardSymbolsPS.otf
+fontFile ZapfDingbats          /usr/share/fonts/gsfonts/Z003-MediumItalic.otf

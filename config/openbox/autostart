@@ -7,5 +7,5 @@ setxkbmap -option compose:ralt &
 lxpolkit &
 killall -9 light-locker
 ${HOME}/bin/http_test &
-xrandr --setprovideroutputsource 1 0
+$(xrandr --listproviders | grep -q "modesetting") && xrandr --setprovideroutputsource 1 0
 compton --config ~/.config/compton.conf -b &

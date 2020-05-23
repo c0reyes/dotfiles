@@ -6,9 +6,8 @@
 # BACKGROUND AND BORDER
 #---------------------------------------------
 rounded = 0
-# border superiror de la barra, aumenta tambien el tamano de los iconos.
-border_width = 1
-background_color = #2d2d2d 60
+border_width = 0
+background_color = #2d2d2d 80
 border_color = #2d2d2d 18
 
 rounded = 0
@@ -28,7 +27,7 @@ border_color = #ffffff 70
 panel_items = TE:E:E:E:E:SC
 panel_monitor = 1
 panel_position = top center horizontal
-panel_size = 100% 30
+panel_size = 100% 28
 panel_margin = 0 0
 panel_padding = 2 0
 font_shadow = 0
