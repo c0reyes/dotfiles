@@ -35,6 +35,7 @@ panel_background_id = 1
 wm_menu = 1
 
 panel_dock = 0
+#panel_layer = normal
 panel_layer = bottom
 strut_policy = follow_size
 

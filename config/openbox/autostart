@@ -9,3 +9,4 @@ killall -9 light-locker
 ${HOME}/bin/http_test &
 $(xrandr --listproviders | grep -q "modesetting") && xrandr --setprovideroutputsource 1 0
 compton --config ~/.config/compton.conf -b &
+/home/coreyes/bin/zentile_linux_amd64 &
