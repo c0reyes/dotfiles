@@ -23,6 +23,8 @@ export TERM=screen-256color
 export GOPATH=${HOME}/go
 export MATLAB=/opt/Apps/MATLAB/R2019a/
 
+export VAGRANT_DEFAULT_PROVIDER=libvirt
+
 alias vi=vim
 alias ls='ls -N --color=auto'
 alias diff='diff --color=auto'

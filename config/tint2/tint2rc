@@ -46,7 +46,14 @@ strut_policy = follow_size
 taskbar_mode = single_desktop
 taskbar_padding = 2 3 2
 taskbar_background_id = 0
-#taskbar_active_background_id = 0
+taskbar_active_background_id = 0
+taskbar_name = 1
+taskbar_name_padding = 3
+taskbar_name_background_id = 0
+taskbar_name_active_background_id = 0
+taskbar_name_font = sans italic 10
+taskbar_name_font_color = #9f9f9f 100
+taskbar_name_active_font_color = #ffffff 100
 
 #---------------------------------------------
 # TASKS
