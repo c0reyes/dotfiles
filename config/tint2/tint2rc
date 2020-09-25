@@ -25,7 +25,7 @@ border_color = #ffffff 70
 #---------------------------------------------
 # items dependiendo lo que queremos mostrar y en el orden
 panel_items = TE:E:E:E:E:SC
-panel_monitor = 1
+#panel_monitor = 1
 panel_position = top center horizontal
 panel_size = 100% 28
 panel_margin = 0 0

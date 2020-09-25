@@ -18,7 +18,7 @@ export BROWSER=/usr/bin/chromium
 export EDITOR=vim
 
 export JAVA_HOME=/opt/Apps/java
-export PATH=${PATH}:${HOME}/bin:/opt/Apps/java/bin:/opt/Apps/sdk/platform-tools:/opt/Apps/maven/bin:/opt/Apps/gradle/bin:/opt/Apps/pandoc-2.9.1.1/bin
+export PATH=${PATH}:${HOME}/bin:/opt/Apps/java/bin:/opt/Apps/sdk/platform-tools:/opt/Apps/maven/bin:/opt/Apps/gradle/bin:/opt/Apps/pandoc-2.9.1.1/bin:/home/coreyes/.local/bin
 export TERM=screen-256color
 export GOPATH=${HOME}/go
 export MATLAB=/opt/Apps/MATLAB/R2019a/
