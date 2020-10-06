@@ -2,7 +2,6 @@ tint2 &
 volumeicon &
 cbatticon &
 nitrogen --restore &
-# bwall > /dev/null &
 setxkbmap -option compose:ralt &
 lxpolkit &
 killall -9 light-locker

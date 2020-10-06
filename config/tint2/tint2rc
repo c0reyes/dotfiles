@@ -7,8 +7,12 @@
 #---------------------------------------------
 rounded = 0
 border_width = 0
-background_color = #2d2d2d 80
-border_color = #2d2d2d 18
+# Arc
+background_color = #404552 80
+border_color = #404552 18
+# Numix
+#background_color = #2d2d2d 80
+#border_color = #2d2d2d 18
 
 rounded = 0
 border_width = 0
@@ -24,7 +28,7 @@ border_color = #ffffff 70
 # PANEL
 #---------------------------------------------
 # items dependiendo lo que queremos mostrar y en el orden
-panel_items = TE:E:E:E:E:SC
+panel_items = TE:E:E:E:SC
 #panel_monitor = 1
 panel_position = top center horizontal
 panel_size = 100% 28
@@ -138,21 +142,21 @@ autohide_height = 0
 
 #-------------------------------------
 # Load and Others
-execp = new
-execp_command = psuinfo -GS
-#execp_command = psuinfo -Cg
-execp_interval = 2
-execp_has_icon = 0
-execp_cache_icon = 1
-execp_continuous = 1
-execp_markup = 1
-execp_font = Monospace 10
-execp_font_color = #ffffff 100
-execp_padding = 5 5
-execp_background_id = 0
-execp_centered = 0
-execp_icon_w = 0
-execp_icon_h = 0
+#execp = new
+#execp_command = psuinfo -GS
+##execp_command = psuinfo -Cg
+#execp_interval = 2
+#execp_has_icon = 0
+#execp_cache_icon = 1
+#execp_continuous = 1
+#execp_markup = 1
+#execp_font = Monospace 10
+#execp_font_color = #ffffff 100
+#execp_padding = 5 5
+#execp_background_id = 0
+#execp_centered = 0
+#execp_icon_w = 0
+#execp_icon_h = 0
 
 #-------------------------------------
 # CPU
