@@ -29,7 +29,7 @@ alias vi=vim
 alias ls='ls -N --color=auto'
 alias diff='diff --color=auto'
 alias grep='grep --color=auto'
-alias weather="curl https://wttr.in/"
+alias weather="curl https://v2.wttr.in/salamanca"
 alias battery="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
 alias chivo='cht.sh'
 alias cat='ccat -G String="_fuchsia_" -G Plaintext="green"'

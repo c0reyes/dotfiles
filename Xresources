@@ -1,0 +1,60 @@
+XTerm*utf8: 1
+XTerm*utf8Title: true
+XTerm*faceName: DejaVuSansMono Nerd Font
+XTerm*faceSize: 11
+XTerm*vt100*geometry: 81x23
+XTerm*saveLines: 5000
+XTerm*loginShell: false
+XTerm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
+XTerm*termName: xterm-color
+XTerm*eightBitInput: false
+XTerm*visualBell: false
+XTerm*bellIsUrgent: true
+XTerm*borderWidth: 0
+XTerm*cursorBlink: true
+XTerm*selectToClipboard: true
+XTerm*rightScrollBar: false
+XTerm*scrollBar: false
+XTerm*foreground: #d0d0d0
+XTerm*background: #151515
+XTerm*cursorColor: #00ffff
+
+UXTerm*utf8: 1
+UXTerm*utf8Title: true
+UXTerm*faceName: DejaVuSansMono Nerd Font
+UXTerm*faceSize: 11
+UXTerm*vt100*geometry: 81x23
+UXTerm*saveLines: 5000
+UXTerm*loginShell: false
+UXTerm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
+UXTerm*termName: xterm-color
+UXTerm*eightBitInput: false
+UXTerm*visualBell: false
+UXTerm*bellIsUrgent: true
+UXTerm*borderWidth: 0
+UXTerm*cursorBlink: true
+UXTerm*selectToClipboard: true
+UXTerm*rightScrollBar: false
+UXTerm*scrollBar: false
+UXTerm*foreground: #d0d0d0
+UXTerm*background: #151515
+UXTerm*cursorColor: #d0d0d0
+
+xterm*iconHint: /home/coreyes/.icons/terminal
+
+xterm*color0:     rgb:00/00/00
+xterm*color1:     rgb:9e/18/28
+xterm*color2:     rgb:00/88/00
+xterm*color3:     rgb:96/8a/38
+xterm*color4:     rgb:41/41/71
+xterm*color5:     rgb:96/3c/59
+xterm*color6:     rgb:41/81/79
+xterm*color7:     rgb:be/be/be
+xterm*color8:     rgb:66/66/66
+xterm*color9:     rgb:cf/61/71
+xterm*color10:    rgb:7c/bc/8c
+xterm*color11:    rgb:ff/f7/96
+xterm*color12:    rgb:41/86/be
+xterm*color13:    rgb:cf/9e/be
+xterm*color14:    rgb:71/be/be
+xterm*color15:    rgb:ff/ff/ff

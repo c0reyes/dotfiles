@@ -1,0 +1,10 @@
+# PCmanFM-Qt
+[Desktop Entry]
+Type=Action
+Name=Ftp Server
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+MimeTypes=inode/directory;
+Exec=xterm -bg black -fg white -e "python -m pyftpdlib -w -r 20000-21000 -d ."
+#Exec=xterm -bg black -fg white -e "~/bin/busybox tcpsvd -vE 0.0.0.0 2121 ~/bin/busybox ftpd -w -A ."
