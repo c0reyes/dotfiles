@@ -1,4 +1,5 @@
 Sublime-Style-Column-Selection@1.7.5
+atom-beautify@0.33.4
 atom-black-ui@0.28.0
 atom-material-syntax@1.0.8
 atom-material-syntax-dark@1.0.0
@@ -11,6 +12,6 @@ language-docker@1.1.8
 language-jenkinsfile@0.1.1
 language-tcltk@0.1.5
 less-than-slash@0.20.0
-markdown-preview-enhanced@0.18.8
+markdown-preview-enhanced@0.18.9
 material@2.2.0
 

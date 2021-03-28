@@ -10,9 +10,13 @@ else
 fi
 
 # Load Bash It
-if [ -f ${BASH_IT}/bash_it.sh ]; then
-   source ${BASH_IT}/bash_it.sh
-fi
+#if [ -f ${BASH_IT}/bash_it.sh ]; then
+#   source ${BASH_IT}/bash_it.sh
+#fi
+
+# Load trueline
+source ~/bin/trueline.sh
+# PROMPT_COMMAND="echo -ne \"\033]0;termite\007\""
 
 export BROWSER=/usr/bin/chromium
 export EDITOR=vim
