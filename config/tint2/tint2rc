@@ -46,7 +46,7 @@ border_color_pressed = #ffffff 70
 
 #-------------------------------------
 # Panel
-panel_items = TE:E:E:E:E:SC
+panel_items = TE:E:E:E:E:E:S:C
 panel_size = 100% 28
 panel_margin = 0 0
 panel_padding = 2 0 2
@@ -143,7 +143,7 @@ launcher_tooltip = 0
 # Clock
 time1_format = %H:%M
 time2_format = 
-time1_font = sans 12
+time1_font = Monospace 10
 time1_timezone = 
 time2_timezone = 
 clock_font_color = #ffffff 75
@@ -180,87 +180,89 @@ ac_connected_cmd =
 ac_disconnected_cmd = 
 
 #-------------------------------------
-# Executor 1
+# Executor checkupdates
 execp = new
-execp_command = psuinfo -It
-execp_interval = 2
-execp_has_icon = 1
-execp_cache_icon = 1
+execp_command = ~/.config/tint2/scripts/update.sh
+execp_interval = 5
+execp_has_icon = 0
+execp_cache_icon = 0
 execp_continuous = 0
 execp_markup = 1
-execp_lclick_command = 
+execp_tooltip = 
+execp_lclick_command = ~/.config/tint2/scripts/update.sh --update
 execp_rclick_command = 
 execp_mclick_command = 
 execp_uwheel_command = 
 execp_dwheel_command = 
 execp_font = Monospace 10
-execp_font_color = #ffffff 100
-execp_padding = 5 5
-execp_background_id = 0
-execp_centered = 0
-execp_icon_w = 15
-execp_icon_h = 15
-
-#-------------------------------------
-# Executor 2
-execp = new
-execp_command = psuinfo -Iu
-execp_interval = 2
-execp_has_icon = 1
-execp_cache_icon = 1
-execp_continuous = 0
-execp_markup = 1
-execp_lclick_command = 
-execp_rclick_command = 
-execp_mclick_command = 
-execp_uwheel_command = 
-execp_dwheel_command = 
-execp_font = Monospace 10
-execp_font_color = #ffffff 100
-execp_padding = 5 5
-execp_background_id = 0
-execp_centered = 0
-execp_icon_w = 15
-execp_icon_h = 15
-
-#-------------------------------------
-# Executor 3
-execp = new
-execp_command = bwm-ng -o csv -c 1 | awk -F ';' '/total/ { if ($5 == 0) { printf("/usr/share/psuinfo/xfer.svg\n%4d Kb/s\n", 0) } else if ($5*8/1.0e3 < 1000) { printf "%s\n%4d Kb/s\n", "/usr/share/psuinfo/xfer-b.svg", ($5*8/1.0e3) } else { printf "%s\n%4d Mb/s\n", "/usr/share/psuinfo/xfer-b.svg", ($5*8/1.0e6)}}'
-execp_interval = 2
-execp_has_icon = 1
-execp_cache_icon = 1
-execp_continuous = 0
-execp_markup = 1
-execp_lclick_command = notify-send "$(printf "Local ip: %s\n\nPublic ip: %s" $(hostname -i | cut -d ' ' -f 1) $(curl --connect-timeout 10 -s ifconfig.co))"
-execp_rclick_command = 
-execp_mclick_command = 
-execp_uwheel_command = 
-execp_dwheel_command = 
-execp_font = Liberation Mono 10
 execp_font_color = #ffffff 75
 execp_padding = 5 5
-execp_background_id = -1
+execp_background_id = 0
 execp_centered = 0
 execp_icon_w = 15
 execp_icon_h = 15
 
 #-------------------------------------
-# Executor 4
+# Executor CPU
 execp = new
-execp_command = ~/.tint2-executors/wifi-name.sh
+execp_command = ~/.config/tint2/scripts/cpu.sh
 execp_interval = 2
-execp_has_icon = 1
+execp_has_icon = 0
 execp_cache_icon = 0
 execp_continuous = 0
-execp_markup = 0
+execp_markup = 1
+execp_lclick_command = ~/.config/tint2/scripts/cpu.sh --popup
+execp_rclick_command = 
+execp_mclick_command = 
+execp_uwheel_command = 
+execp_dwheel_command = 
+execp_font = Monospace 10
+execp_font_color = #ffffff 75
+execp_padding = 5 5
+execp_background_id = 0
+execp_centered = 0
+execp_icon_w = 15
+execp_icon_h = 15
+
+#-------------------------------------
+# Executor Memory
+execp = new
+execp_command = ~/.config/tint2/scripts/memory.sh
+execp_interval = 2
+execp_has_icon = 0
+execp_cache_icon = 0
+execp_continuous = 0
+execp_markup = 1
+execp_lclick_command = ~/.config/tint2/scripts/memory.sh --popup
+execp_rclick_command = 
+execp_mclick_command = 
+execp_uwheel_command = 
+execp_dwheel_command = 
+execp_font = Monospace 10
+execp_font_color = #ffffff 75
+execp_padding = 5 5
+execp_background_id = 0
+execp_centered = 0
+execp_icon_w = 15
+execp_icon_h = 15
+
+#-------------------------------------
+# Executor WIFI
+execp = new
+execp_command = ~/.config/tint2/scripts/wifi-name.sh
+execp_interval = 2
+execp_has_icon = 0
+execp_cache_icon = 0
+execp_continuous = 0
+execp_markup = 1
 execp_tooltip = 
 execp_lclick_command = 
 execp_rclick_command = 
 execp_mclick_command = 
 execp_uwheel_command = 
 execp_dwheel_command = 
-execp_font_color = #f8e6e6 100
+execp_font = Monospace 10
+execp_font_color = #ffffff 75
 execp_padding = 5 5
 execp_background_id = 0
 execp_centered = 0
@@ -268,26 +270,39 @@ execp_icon_w = 15
 execp_icon_h = 15
 
 #-------------------------------------
-# Executor 5
+# Executor Network
 execp = new
-execp_command = ~/.tint2-executors/arch-update.sh
-execp_interval = 86400
-execp_has_icon = 1
+execp_command = ~/.config/tint2/scripts/network.sh
+execp_interval = 2
+execp_has_icon = 0
 execp_cache_icon = 0
 execp_continuous = 0
-execp_markup = 0
-execp_tooltip = 
-execp_lclick_command = termite -e 'sh -c "sudo pacman -Syu ; echo Finished, press enter to close; read; killall -SIGUSR1 tint2"'
+execp_markup = 1
+execp_lclick_command = ~/.config/tint2/scripts/network.sh --popup
 execp_rclick_command = 
 execp_mclick_command = 
 execp_uwheel_command = 
 execp_dwheel_command = 
-execp_font_color = #f8e6e6 100
+execp_font = Monospace 10
+execp_font_color = #ffffff 75
 execp_padding = 5 5
 execp_background_id = 0
 execp_centered = 0
 execp_icon_w = 15
 execp_icon_h = 15
+
+#-------------------------------------
+# Executor weather
+execp = new
+execp_command = ~/.config/tint2/scripts/weather.sh
+execp_interval = 1200
+execp_continuous = 0
+execp_lclick_command = ~/.config/tint2/scripts/weather.sh --popup
+execp_font = cuprum 10
+execp_font_color = #ffffff 80
+execp_padding = 0 0
+execp_background_id = 0
+execp_centered = 1
 
 #-------------------------------------
 # Tooltip
