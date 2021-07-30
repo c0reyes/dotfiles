@@ -9,7 +9,6 @@ My dotfiles :-)
 - [Bash-it](https://github.com/Bash-it/bash-it)
 - [bash-insulter](https://github.com/hkbakke/bash-insulter)
 - [termite-style](https://github.com/adi1090x/termite-style)
-- [tint2-executors](https://github.com/nwg-piotr/tint2-executors)
 - [cheat.sh](https://github.com/chubin/cheat.sh)
 - [wttr.in](https://github.com/chubin/wttr.in)
 - [battery-wallpaper](https://github.com/adi1090x/battery-wallpaper/)
@@ -17,7 +16,3 @@ My dotfiles :-)
 ## Fonts
 
 - [noto-emoji](https://github.com/googlefonts/noto-emoji/tree/master/fonts)
-
-## Screen
-
-![alt text](screen/screenshot.png?raw=true "Screenshot")
